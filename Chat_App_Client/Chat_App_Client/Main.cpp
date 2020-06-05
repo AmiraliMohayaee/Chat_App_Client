@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 	// 
 	if (SDLNet_ResolveHost(&ip, "localhost", 1234) == -1)
 	{
-		std::cout << "Failed to open connection with host" << std::endl;
+		std::cout << "Failed to open connection with host." << std::endl;
 		system("pause");
 		return 0;
 	}
@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
 
 	if (socket == nullptr)
 	{
-		std::cout << "Could not crete a socket to server.\n" << std::endl;
+		std::cout << "Could not crete a socket to server./n" << std::endl;
 		system("pause");
 		return 0;
 	}
@@ -83,7 +83,7 @@ int main(int argc, char* argv[])
 
 	if (SDLNet_TCP_Recv(socket, incomingMsg, 2000) <= 0)
 	{
-		std::cout << "Could not recieve message from Server.\n" << std::endl;
+		std::cout << "Could not recieve message from Server./n" << std::endl;
 	}
 	else
 	{
